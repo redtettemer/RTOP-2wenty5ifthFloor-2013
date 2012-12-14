@@ -1,0 +1,18 @@
+== Welcome to the RT+P Ruby on Rails Boilerplate
+
+We wind up making a bunch of projects with very similar backbones. So, I put
+together this little boilerplate for us to get running on projects more quickly.
+
+
+== What's included
+
+1. A boilerplate Gemfile with our most commonly used gems.
+
+2. HTML5 Boilerplate, normalize.css, and log() js function for IE-friendly console.loggin'.  
+
+3. SCSS-ified application.css
+
+4. A basic index action in a home controller.
+
+5. A good boilerplate .gitignore.
+
