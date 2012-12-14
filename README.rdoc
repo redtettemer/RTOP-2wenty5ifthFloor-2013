@@ -7,12 +7,8 @@ together this little boilerplate for us to get running on projects more quickly.
 == What's included
 
 1. A boilerplate Gemfile with our most commonly used gems.
-
-2. HTML5 Boilerplate, normalize.css, and log() js function for IE-friendly console.loggin'.  
-
+2. HTML5 Boilerplate (with normalize.css, modernizr, and log() js function for IE-friendly console.loggin'.) 
 3. SCSS-ified application.css
-
 4. A basic index action in a home controller.
-
 5. A good boilerplate .gitignore.
-
+6. AppEnv module for easier local dev/test config var access.
