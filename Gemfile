@@ -4,6 +4,7 @@ gem 'rails', '3.2.9'
 gem 'pg'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'jquery-rails'
+gem 'activeadmin'
 
 
 # OPTIONAL GEMS - Pick your features
@@ -31,6 +32,7 @@ gem 'jquery-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -39,7 +41,6 @@ group :development do
   gem 'taps'
   gem 'debugger'
   gem 'sqlite3'
-
 end
 
 group :production do
