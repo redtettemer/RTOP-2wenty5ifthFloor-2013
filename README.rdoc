@@ -22,9 +22,9 @@ together this little boilerplate for us to get running on projects more quickly.
 5. Refer to the ActiveAdmin docs to configure the admin interface (depends on your model setup): https://github.com/gregbell/active_admin
 
 == Colophon
-- HTML5 Boilerplate: http://html5boilerplate.com/
-- SASS: http://sass-lang.com/
-- Normalize.css: http://necolas.github.com/normalize.css/
-- Modernizr: http://modernizr.com/
+- HTML5 Boilerplate: http://html5boilerplate.com
+- SASS: http://sass-lang.com
+- Normalize.css: http://necolas.github.com/normalize.css
+- Modernizr: http://modernizr.com
 - ActiveAdmin: https://github.com/gregbell/active_admin
 - Heroku: http://heroku.com
