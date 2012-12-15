@@ -15,12 +15,12 @@ This project is a fast-start boilerplate for creating basic Ruby on Rails projec
 
 ## Getting Started
 1. Rename your app. Run a full-project text search for "Boilerplate" and replace it with your app's namespace in every case except this README.
-2. Create your database, run `rake db:setup`. 
+2. Create your database, run `rake db:setup`
 3. Run `rake db:migrate` to initialize the ActiveAdmin interface tables.
 4. Run your server with foreman: `foreman start`
 5. Proceed with building your app normally, without worrying about the more tedious and repetitive initial setup steps.
 6. Refer to the ActiveAdmin docs to configure the admin interface (depends on your model setup): <https://github.com/gregbell/active_admin>
-	- The default user/pass for Active admin is `admin@example.com:password`
+	- The default user/pass for Active admin is `admin@example.com`:`password`
 
 ## Colophon
 - HTML5 Boilerplate: <http://html5boilerplate.com>
