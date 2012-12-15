@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
-gem 'pg'
-gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'jquery-rails'
-gem 'activeadmin'
-
+gem 'rails', '3.2.9'            # Ruby on Rails framework
+gem 'pg'                        # PostgreSQL
+gem 'jquery-rails'              # jQuery...Rails...
+gem 'activeadmin'               # For managing models with an admin GUI
+gem 'lograge'                   # Makes our prod logs much easier to grok
+gem 'unicorn'                   # A nice HTTP Server
+gem 'foreman'                   # Use unicorn locally
 
 # OPTIONAL GEMS - Pick your features
 
@@ -37,13 +38,8 @@ group :assets do
 end
 
 group :development do
-  gem 'heroku'
-  gem 'taps'
-  gem 'debugger'
-  gem 'sqlite3'
+  gem 'heroku'      # For using Heroku's CLI tools
+  gem 'taps'        # For database transferring
+  gem 'sqlite3'     # For compatibility with taps gem
+  gem 'debugger'    # For debuggin'
 end
-
-group :production do
-  gem 'unicorn'
-end
-
