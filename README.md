@@ -29,3 +29,4 @@ This project is a fast-start boilerplate for creating basic Ruby on Rails projec
 - Modernizr: <http://modernizr.com>
 - ActiveAdmin: <https://github.com/gregbell/active_admin>
 - Heroku: <http://heroku.com>
+- Paperclip: <https://github.com/thoughtbot/paperclip>

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'            # Ruby on Rails framework
+gem 'rails', '3.2.11'           # Ruby on Rails framework
 gem 'pg'                        # PostgreSQL
 gem 'jquery-rails'              # jQuery...Rails...
 gem 'activeadmin'               # For managing models with an admin GUI
