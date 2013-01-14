@@ -32,8 +32,6 @@ This project is a fast-start boilerplate for creating basic Ruby on Rails projec
 - Paperclip: <https://github.com/thoughtbot/paperclip>
 
 ## License
-This work is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
-
-"Rails" and "Ruby on Rails" are registered trademarks of David Heinemeier Hansson.
-
-Rails is released under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Ruby is released under the [Ruby License](http://www.ruby-lang.org/en/about/license.txt).
+- This work is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
+- "Rails" and "Ruby on Rails" are registered trademarks of David Heinemeier Hansson.
+- Rails is released under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Ruby is released under the [Ruby License](http://www.ruby-lang.org/en/about/license.txt).
