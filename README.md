@@ -23,7 +23,7 @@ This project is a fast-start boilerplate for creating basic Ruby on Rails projec
 	- The default user/pass for Active admin is `admin@example.com`:`password`
 
 ## Colophon
-*- HTML5 Boilerplate: <http://html5boilerplate.com>
+- HTML5 Boilerplate: <http://html5boilerplate.com>
 - SASS: <http://sass-lang.com>
 - Normalize.css: <http://necolas.github.com/normalize.css>
 - Modernizr: <http://modernizr.com>
@@ -32,7 +32,8 @@ This project is a fast-start boilerplate for creating basic Ruby on Rails projec
 - Paperclip: <https://github.com/thoughtbot/paperclip>
 
 ## License
+This work is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
+
 "Rails" and "Ruby on Rails" are registered trademarks of David Heinemeier Hansson.
-This work is licensed under a Creative Commons Attribution 3.0 Unported License: <http://creativecommons.org/licenses/by/3.0/deed.en_US>
-Rails is released under the MIT License: <http://www.opensource.org/licenses/mit-license.php>
-Ruby is released under the Ruby License: <http://www.ruby-lang.org/en/about/license.txt>
+
+Rails is released under the [MIT License](http://www.opensource.org/licenses/mit-license.php). Ruby is released under the [Ruby License](http://www.ruby-lang.org/en/about/license.txt).
