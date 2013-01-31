@@ -7,11 +7,15 @@ gem 'activeadmin'               # For managing models with an admin GUI
 gem 'lograge'                   # Makes our prod logs much easier to grok
 gem 'unicorn'                   # A nice HTTP Server
 gem 'foreman'                   # Use unicorn locally
+gem 'paperclip'                 # For attaching files 
 
 # OPTIONAL GEMS - Pick your features
 
+# Dev Environment
+# gem 'vagrant'               # VM generation / management
+# gem "ffi", "~> 1.3"         # Required for vagrant - wacky dependency thing
+
 # File handling:
-# gem 'paperclip'           # For attaching files
 # gem 'aws-sdk'             # For storing uploaded files on S3
 
 # User handling:
