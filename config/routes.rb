@@ -1,6 +1,4 @@
 Boilerplate::Application.routes.draw do
-  
-  ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
@@ -8,5 +6,7 @@ Boilerplate::Application.routes.draw do
   # earlier in this file -> higher priority.
 
   root to: 'home#index', as: :home
+  
+  ActiveAdmin.routes(self)
 
 end
