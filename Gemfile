@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
-gem 'rails', '3.2.11'           # Ruby on Rails framework
+gem 'rails', '~>3.2'            # Ruby on Rails framework
 gem 'pg'                        # PostgreSQL
-gem 'jquery-rails'              # jQuery...Rails...
+gem "jquery-rails", "2.3.0"     # jQuery...Rails... (locked at 2.3.0 for ActiveAdmin compatibility)
 gem 'activeadmin'               # For managing models with an admin GUI
 gem 'lograge'                   # Makes our prod logs much easier to grok
 gem 'unicorn'                   # A nice HTTP Server
@@ -42,8 +43,11 @@ group :assets do
 end
 
 group :development do
-  gem 'heroku'      # For using Heroku's CLI tools
-  gem 'taps'        # For database transferring
-  gem 'sqlite3'     # For compatibility with taps gem
-  gem 'debugger'    # For debuggin'
+  gem 'heroku'            # For using Heroku's CLI tools
+  gem 'taps'              # For database transferring
+  gem 'sqlite3'           # For compatibility with taps gem
+  gem 'debugger'          # For debuggin'
+  gem 'progress_bar'      # For better terminal outputs
+  gem 'better_errors'     # For displaying better error pages
+  gem 'binding_of_caller' # For providing an active console on error pages
 end
