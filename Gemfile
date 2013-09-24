@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 gem 'rails', '~>4.0'            # Ruby on Rails framework
 gem 'pg'                        # PostgreSQL
@@ -7,6 +8,7 @@ gem 'unicorn'                   # A nice HTTP Server
 gem 'foreman'                   # Use unicorn locally
 gem 'paperclip'                 # For attaching files 
 gem 'protected_attributes'      # For protecting model from mass assignment attacks with attr_accessible
+gem 'rails_12factor',   group: :production
 
 # OPTIONAL GEMS - Pick your features
 
