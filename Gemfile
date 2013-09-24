@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'           # Ruby on Rails framework
+gem 'rails', '~>4.0'            # Ruby on Rails framework
 gem 'pg'                        # PostgreSQL
-gem 'jquery-rails'              # jQuery...Rails...
-gem 'activeadmin'               # For managing models with an admin GUI
 gem 'lograge'                   # Makes our prod logs much easier to grok
 gem 'unicorn'                   # A nice HTTP Server
 gem 'foreman'                   # Use unicorn locally
 gem 'paperclip'                 # For attaching files 
+gem 'protected_attributes'      # For protecting model from mass assignment attacks with attr_accessible
 
 # OPTIONAL GEMS - Pick your features
 
@@ -31,14 +30,13 @@ gem 'paperclip'                 # For attaching files
 # gem 'mail'                # Action Mailer for sending emails
 # gem 'roadie'              # Easy HTML email conversion
 
-# Performance:
-# gem 'dalli'               # Cache handling for memcached
-
+gem 'dalli'                 # Cache handling for memcached
+gem 'memcachier'            # Memcached on Heroku support (install the free addon on Heroku) 
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-rails'
+  gem 'sass-rails'
+  gem 'uglifier'
 end
 
 group :development do
@@ -46,4 +44,7 @@ group :development do
   gem 'taps'        # For database transferring
   gem 'sqlite3'     # For compatibility with taps gem
   gem 'debugger'    # For debuggin'
+  gem 'progress_bar'      # For better terminal outputs
+  gem 'better_errors'     # For displaying better error pages
+  gem 'binding_of_caller' # For providing an active console on error pages
 end
