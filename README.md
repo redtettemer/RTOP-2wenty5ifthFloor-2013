@@ -11,12 +11,15 @@ This project is a fast-start boilerplate for creating basic Ruby on Rails projec
 - AppEnv module for easier local dev/test config var access.
 - App pre-configured to use the Unicorn HTTP server on Heroku with 3 workers per dyno.
 
+## What's NOT included
+- ActiveAdmin: AA's been left out to keep this Boilerplate somewhat anti-opinionated early in the build. AA can be installed easily following instructions [here](https://github.com/gregbell/active_admin#getting-started). 
+- Devise: Had been part of ActiveAdmin's dependencies. Now, to use it, install the gem and follow the instructions [here](https://github.com/plataformatec/devise#getting-started).
 
 ## Getting Started
 1. Rename your app. Run a full-project text search for "Boilerplate" and replace it with your app's namespace in every case except this README.
 2. Create your database, run `rake db:setup`
-4. Run your server: `rails s`
-5. Proceed with building your app normally, without worrying about the more tedious and repetitive initial setup steps.
+3. Run your server: `rails s`
+4. Proceed with building your app normally, without worrying about the more tedious and repetitive initial setup steps.
 
 ## Colophon
 - HTML5 Boilerplate: <http://html5boilerplate.com>
