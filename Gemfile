@@ -3,8 +3,6 @@ ruby '2.0.0'
 
 gem 'rails', '~>4.0'            # Ruby on Rails framework
 gem 'pg'                        # PostgreSQL
-gem 'rails', '~>3.2'            # Ruby on Rails framework
-gem 'pg'                        # PostgreSQL
 gem 'lograge'                   # Makes our prod logs much easier to grok
 gem 'unicorn'                   # A nice HTTP Server
 gem 'foreman'                   # Use unicorn locally
@@ -44,17 +42,10 @@ group :assets do
 end
 
 group :development do
-<<<<<<< HEAD
   gem 'heroku'      # For using Heroku's CLI tools
   gem 'taps'        # For database transferring
   gem 'sqlite3'     # For compatibility with taps gem
   gem 'debugger'    # For debuggin'
-=======
-  gem 'heroku'            # For using Heroku's CLI tools
-  gem 'taps'              # For database transferring
-  gem 'sqlite3'           # For compatibility with taps gem
-  gem 'debugger'          # For debuggin'
->>>>>>> ac4ceeabba76f109b3cde252d2afcbca39c86e03
   gem 'progress_bar'      # For better terminal outputs
   gem 'better_errors'     # For displaying better error pages
   gem 'binding_of_caller' # For providing an active console on error pages
