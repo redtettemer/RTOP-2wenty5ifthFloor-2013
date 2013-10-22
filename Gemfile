@@ -50,3 +50,5 @@ group :development do
   gem 'binding_of_caller' # For providing an active console on error pages
 end
 
+gem 'rails_12factor', group: :production
+
