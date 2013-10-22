@@ -5,4 +5,6 @@ FortuneTeller::Application.routes.draw do
 
   root to: 'home#index', as: :home
 
+  post '/rsvp', to: 'home#rsvp', as: :people
+
 end

@@ -2,24 +2,79 @@
 
 <div class="cards">
 	<section class="deck">
-		<article class="card top">
-			<div class="card-content">
-				<h2>HE KNOWS</h2>
-				<h3>WHAT YOU ARE DOING</h2>
-				<h2 class="landing-date">NOV. 8<sup>TH</sup> 2013</h2>
-				<p>
-					You will be attending the Red Tettemer O’Connell +Partners’ 2wenty5ifth floor. You will be 
-					enjoying music from <strong>Biz Markie</strong> and the doors will be opening at 6pm and going until...
-					Well, he won’t ruin that part for you.
-				</p>
-				<a class="rsvp-button"></a>
+		<article class="card top flipped">
+			<div class="card-flipper">
+				<div class="card-front">
+					<div class="card-content">
+						<h2>HE KNOWS</h2>
+						<h3>WHAT YOU ARE DOING</h2>
+						<h2 class="landing-date">NOV. 8<sup>TH</sup> 2013</h2>
+						<p>
+							You will be attending the Red Tettemer O’Connell +Partners’ 2wenty5ifth floor. You will be 
+							enjoying music from <strong>Biz Markie</strong> and the doors will be opening at 6pm and going until...
+							Well, he won’t ruin that part for you.
+						</p>
+						<a class="rsvp-button show-form"></a>
+						<script>
+							$('.show-form').click(function(){
+								$(this).closest('.card').addClass('flipped');
+							});
+						</script>
+					</div>
+				</div>
+				<div class="card-back">
+					<div class="card-content">
+						<%= form_for @person do |f| %>
+							<%= f.label :first_name, "He knows you’ll enter<br />your name here:".html_safe %>
+							<div class="clearfix"><%= f.text_field :first_name %> <%= f.text_field :last_name %></div>
+							<%= f.label :email, "He knows you’ll enter<br />your email address here:".html_safe, class: 'clearfix' %>
+							<%= f.email_field :email %>
+							<%= fields_for @person.rsvp do |ff| %>
+								<label>He knows you'll select one:</label>
+								<p>
+									<%= ff.label :is_attending, "ATTENDING?", class: "options" %> &nbsp;
+									<%= ff.radio_button :is_attending, "1" %> <%= ff.label :is_attending_1, "YES", class: "options-discrete" %> &nbsp;
+									<%= ff.radio_button :is_attending, "0" %> <%= ff.label :is_attending_1, "NO", class: "options-discrete" %>
+								</p>
+								<p>
+									<%= ff.label :is_attending, "BRINGING A GUEST?", class: "options" %> &nbsp;
+									<%= ff.check_box :is_bringing_guest %> <%= ff.label :is_bringing_guest, "+1", class: "options-discrete" %>
+								</p>
+							<% end %>
+							<a class="rsvp-button submit-form"></a>
+							<script>
+								$('.submit-form').click(function(){
+									$(this).closest('.card').removeClass('flipped');
+								});
+							</script>
+						<% end %>
+					</div>
+				</div>
 			</div>
 		</article>
 		<article class="card right1">
-		
+			<div class="card-flipper">
+				<div class="card-front">
+					<div class="card-content">
+						
+					</div>
+				</div>
+				<div class="card-back">
+					stuff!
+				</div>
+			</div>
 		</article>
 		<article class="card left1">
-		
+			<div class="card-flipper">
+				<div class="card-front">
+					<div class="card-content">
+						
+					</div>
+				</div>
+				<div class="card-back">
+					stuff!
+				</div>
+			</div>
 		</article>
 	</section>
 </div>
