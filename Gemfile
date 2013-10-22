@@ -8,7 +8,6 @@ gem 'unicorn'                   # A nice HTTP Server
 gem 'foreman'                   # Use unicorn locally
 gem 'paperclip'                 # For attaching files 
 gem 'protected_attributes'      # For protecting model from mass assignment attacks with attr_accessible
-gem 'rails_12factor',   group: :production
 
 # OPTIONAL GEMS - Pick your features
 
@@ -49,4 +48,8 @@ group :development do
   gem 'progress_bar'      # For better terminal outputs
   gem 'better_errors'     # For displaying better error pages
   gem 'binding_of_caller' # For providing an active console on error pages
+end
+
+group :production do 
+  gem 'rails_12factor'
 end

@@ -1,4 +1,4 @@
-Boilerplate::Application.routes.draw do
+FortuneTeller::Application.routes.draw do
 
   # The priority is based upon order of creation:
   # earlier in this file -> higher priority.
